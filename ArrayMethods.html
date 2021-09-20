@@ -1,0 +1,89 @@
+<script>
+        const array = [10,20,30,-1,-5,80,-6,9,-5,2,3,-20];
+    const array1 = [10,20,30,1,5,80,6,9,5,2,3,20];
+    
+// i) at() : take a index value and the element at that place.
+                   //  negative value goes from right side
+                   //  const indexValue = 5;
+                   //  console.log(`Using an index of ${indexValue} the item returned is ${array.at(indexValue)}`);
+                                    
+// ii) concat(): used to merge the two array and return the new array  
+                   //  const array3=(array.concat(array1));
+                   //  console.log(array3);
+
+// iii) copyWithin(): shallow copies part of an array to another location in the same array and returns it without modifying its length.
+                   //  copyWithin(target, start)
+                   //  console.log(array.copyWithin(3,5))
+                   //  copyWithin(target, start, end)
+                   //  console.log(array.copyWithin(3,5,7))
+
+// iv) entries(): returns new array iterator object tha contain key value pair  
+                   //  const iterator = array.entries();
+                   //  console.log(iterator); // output: ƒ entries() { [native code] }
+                   //  console.log(iterator.next().value); // output 0,10
+                   //  console.log(iterator.next().value); // output 1,20
+
+// v) every(): to check all the array elements at a time for any condition always return boolean value
+                   //  const EighteenPlus=(value) => value>18
+                   //  console.log(array.every(EighteenPlus)); // output false
+
+// vi) filter(): give the new array with all elements that pass the test
+                   //  const filterValue = (value) => value > 19           
+                   //  console.log(array.filter(filterValue))      
+        
+// vii) fill(): change the all value of array with a static value
+                   //  fill(value) all value 6
+                   //  console.log(array.fill(6));
+                   //  fill(value, start) at that position were start
+                   //  console.log(array.fill(2,6));
+                   //  fill(value, start, end)    where to where
+                   //  console.log(array.fill(2,4,8))
+
+// viii) find():check the condition if satisfied than give that first satisfied element otherwise undefined
+                   //  const found = value => value > 5
+                   //  console.log(array.find(found))
+
+// ix) findIndex(): it's gives the first satisfied index value of find otherwise -1
+                   //  const found = value => value < 10
+                   //  console.log(array.findIndex(found));
+
+// x) flat(): method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth
+                   //  flat()
+                   //  const arr1 = [0, 1, 2, [3, 4]];
+                   //  console.log(arr1.flat()); // expected output: [0, 1, 2, 3, 4]
+                   //  flat(depth): The depth level specifying how deep a nested array structure should be flattened. Defaults to 1.
+                   //  const arr2 = [0, 1, 2, [[[3, 4]]]];
+                   //  console.log(arr2.flat(2)); // expected output: [0, 1, 2, [3, 4]]
+// xi) flatMap(): flat+map rule
+                   //  let arr1 = [1, 2, 3, 4];
+                   //  arr1.map(x => [x * 2]);  // [[2], [4], [6], [8]]
+                   //  arr1.flatMap(x => [x * 2]); // [2, 4, 6, 8]
+                   //  only one level is flattened
+                   //  arr1.flatMap(x => [[x * 2]]);// [[2], [4], [6], [8]]
+
+// xii) forEach(): execute a provide function once for each array element
+                   //  array.forEach( elements => console.log(elements))
+
+// xiii) Array.from(): static method create new shallow copy array-like or iterable object.
+                   //  console.log(Array.from('foo'));                 
+
+// xiv) includes(): its determine whether an array conains the value or not but gives boolean value
+                   //  const array1 = [1, 2, 3];
+                   //  console.log(array1.includes(2));  
+                   
+                   
+                   // JSON Parse: string to JS object then in array
+                   //    var json_data = {"2013-01-21":1,"2013-01-22":7};
+                   // var result = [];
+// for(var i in json_data)
+//     result.push([i, json_data[i]]);
+//     console.log(result);  
+//     var text = '{ "name":"John", "age":"39", "city":"New York"}';
+// var obj = JSON.parse(text);
+// console.log(obj); 
+// var result1=[];
+// for(var i in obj)
+//     result1.push([i, obj[i]]);    
+//     console.log(result1);           
+
+</script>
