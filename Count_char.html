@@ -1,0 +1,74 @@
+<script>
+
+    
+
+// Rest opertor 
+
+// count letter in word
+function getCount(string){
+    const object={};
+    for(let i=0; i<string.length; i++){
+        const ch=string[i];
+        console.log("cnnnnnnnnh",ch);
+        
+          if(!object[ch]){
+            object[ch]=0;
+           }
+           object[ch]++;
+           console.log("count",object[ch]);
+    }
+    return object;
+}
+console.log(getCount("hello world"));
+
+
+// const string="Hello Himanshu How Are You Fine or Not"
+// // const str1=string.replaceAll(' ','');
+// // const str2=str1.toUpperCase();
+// const str2=string.toUpperCase();
+// console.log(str2);
+// var count={};
+
+// for(var i of str2){
+//     if(!count[i]){
+//         count[i]=1;
+//     console.log("if",i);
+
+//     }
+//     else
+//     count[i]++;
+//     console.log("else",i);
+// }
+// console.log(count[i],count);
+
+// const arr=str2.split(' ')
+// for(let x of arr){
+//     if(!count[x]){
+//         count[x]=1;
+//     }
+//     else
+//     count[x]++;
+// }
+// console.log(count);
+// const a = [4,3,6,3,4,3]
+
+// function count_duplicate(a){
+//  let counts = {}
+
+//  for(let i =0; i < a.length; i++){ 
+//      if (counts[a[i]]){
+//      counts[a[i]] += 1
+//      } else {
+//      counts[a[i]] = 1
+//      }
+//     }  
+//     for (let prop in counts){
+//         if (counts[prop] >= 2){
+//             console.log(prop + " counted: " + counts[prop] + " times.")
+//         }
+//     }
+//   console.log(counts)
+// }
+
+// count_duplicate(a)
+</script>
